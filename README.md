@@ -23,4 +23,4 @@
   <li>В urls.py находится маршрутизация по адресам, каждому из которых соответствует функция в views.py выполняющая определенную роль</li>
  </ul>
 
-![screen](https://github.com/[ids21]/[WebShop]/blob/[master]/webscreen.png?raw=true)
+![screen](https://github.com/ids21/WebShop/blob/master/webscreen.png?raw=true)
