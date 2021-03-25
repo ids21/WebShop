@@ -1,0 +1,20 @@
+<tr>
+<td>
+    {{item.Name}}
+</td>
+
+<td>
+    <input name="title1"[(ngModel)] = "item.Amount" #tovTitle = "ngModel" (ngModelChange) = "increase(item.Amount)"/>
+</td>
+<td>
+    {{item.Price}}
+</td> 
+<td>
+    {{item.Sum}} 
+</td>    
+<td><button (click) ="increase(item.pk)"> Добавить </button>  </td>
+    <td>
+    <button class = "delete"(click)="onDelete()">delete</button> 
+</td> 
+
+</tr>

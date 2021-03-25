@@ -1,0 +1,31 @@
+<h2>Products</h2>
+<div class="kek">
+<div *ngFor="let product_ of product; index as productId" >
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>   
+        <h8>
+          <a [title]="product_.Name + ' details'" [routerLink]="['/products',productId]">
+            {{ product_.Name }}
+          </a>
+        </h8> 
+      </mat-card-title>
+    </mat-card-header>
+
+   <div align = "center"> <img mat-card-image src={{product_.Image}}></div>
+    <mat-card-content>
+      <p *ngIf="product_.Description">
+        Description: {{ product_.Description }}
+    </p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button (click)="addToCart(productId)">Add to Cart</button>
+    </mat-card-actions>
+  </mat-card>
+
+
+</div>  
+
+</div>

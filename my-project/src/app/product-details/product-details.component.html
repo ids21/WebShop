@@ -1,0 +1,27 @@
+<h2>Product Details</h2>
+
+<div>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>   
+            {{product.Name}}
+      </mat-card-title>
+    </mat-card-header>
+
+   <div align = "center"> <img mat-card-image src={{product.Image}}></div>
+    <mat-card-content>
+      <p *ngIf="product.Description">
+        Description: {{ product.Description }}
+        </p>
+    <p *ngIf="product.Amount">
+    Amount: {{product.Amount}}
+    </p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button (click)="addToCart(product.pk)">Add to Cart</button>
+    </mat-card-actions>
+  </mat-card>
+
+
+</div>

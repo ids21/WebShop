@@ -1,0 +1,23 @@
+.example-card {
+  max-width: 400px;
+  
+}
+
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 300px;
+  
+}
+.mat-card{
+  background-attachment: fixed;
+}
+.kek{
+  display: flex;
+    justify-content: space-between;
+}

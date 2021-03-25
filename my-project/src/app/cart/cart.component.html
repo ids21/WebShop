@@ -1,0 +1,15 @@
+<h3>Cart</h3>
+
+<table align="center" >
+  <thead>
+      <th>Товар</th>
+      <th>Количество</th>
+      <th>Цена</th>
+      <th>Итоговая сумма</th>
+  </thead>
+  <tbody>
+  <app-item *ngFor = "let item of items; let i = index" [item]="item" (delete) = "delete($event)">
+  </app-item> 
+
+  </tbody>
+</table>
